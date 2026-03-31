@@ -10,59 +10,61 @@
     margin: 0; 
     background: #003366; 
     color: #fff; 
+    line-height: 1.5;
   }
 
   header { 
     background: linear-gradient(#ffcc00, #ff9900); 
     color: #000; 
     text-align: center; 
-    padding: 20px 15px; 
+    padding: 25px 15px; 
   }
 
   header h1 {
     margin: 0;
-    font-size: 2.6em;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   }
 
   nav { 
     background: #222; 
-    padding: 12px; 
+    padding: 14px; 
     text-align: center; 
   }
 
   nav a { 
     color: #ffcc00; 
-    margin: 0 15px; 
+    margin: 0 16px; 
     text-decoration: none; 
     font-weight: bold;
   }
 
   .container { 
-    max-width: 1200px; 
-    margin: 25px auto; 
+    max-width: 1250px; 
+    margin: 30px auto; 
     padding: 0 20px; 
     display: flex; 
-    gap: 25px;
-    flex-wrap: wrap;           /* Allows wrapping on small screens */
+    gap: 30px;
+    flex-wrap: wrap;
   }
 
   .main { 
     flex: 3; 
-    min-width: 300px;          /* Prevents sidebar from squeezing it too much */
+    min-width: 320px; 
   }
 
   .sidebar { 
     flex: 1; 
     background: #222; 
     padding: 20px; 
-    border-radius: 8px;
-    min-width: 220px;          /* Important for sidebar */
+    border-radius: 10px;
+    min-width: 240px;
   }
 
   .game-grid { 
     display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
-    gap: 18px; 
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); 
+    gap: 20px; 
   }
 
   .game-card { 
@@ -70,12 +72,13 @@
     border-radius: 10px; 
     overflow: hidden; 
     text-align: center;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
   }
 
   .game-card:hover {
     background: #2a2a2a;
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.25);
   }
 
   .game-card img { 
@@ -86,23 +89,23 @@
 
   .game-card h3 { 
     margin: 12px 10px 6px 10px; 
-    font-size: 1.1em; 
+    font-size: 1.12em; 
     color: #ffcc00;
   }
 
   .game-desc {
-    margin: 0 10px 15px 10px;
-    font-size: 0.93em;
+    margin: 0 10px 16px 10px;
+    font-size: 0.94em;
     color: #ddd;
-    line-height: 1.4;
+    line-height: 1.45;
   }
 
   footer { 
     text-align: center; 
-    padding: 25px; 
+    padding: 30px 20px; 
     background: #111; 
-    font-size: 0.9em; 
-    margin-top: 40px;
+    font-size: 0.92em; 
+    margin-top: 50px;
   }
 </style>
 </head>
