@@ -1,0 +1,104 @@
+/* =============================================
+   Simonov igralni portal - general.css
+   ============================================= */
+
+body {
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #003366;           /* old-school blue background */
+    color: #eee;
+    line-height: 1.5;
+}
+
+header {
+    background: linear-gradient(#ffcc00, #ff9900);
+    color: #000;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    margin: 8px 0 0 0;
+    font-size: 1.1em;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 22px;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.game-card {
+    background: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    text-align: center;
+}
+
+.game-card:hover {
+    background: #2a2a2a;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.25);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.game-card h3 {
+    margin: 12px 10px 6px 10px;
+    font-size: 1.15em;
+    color: #ffcc00;
+}
+
+.game-card .game-desc {
+    margin: 0 10px 16px 10px;
+    font-size: 0.93em;
+    color: #ccc;
+    line-height: 1.45;
+    min-height: 48px;
+}
+
+/* Simple navigation */
+nav {
+    background: #111;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffcc00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
