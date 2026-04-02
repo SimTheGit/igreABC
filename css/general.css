@@ -29,52 +29,86 @@ header p {
     font-size: 1.1em;
 }
 
+/* ==================== GAME CARDS (Homepage) ==================== */
 .game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    gap: 22px;
-    margin: 30px auto;
-    max-width: 1200px;
-    padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 18px;
+  margin: 30px auto;
+  max-width: 1250px;
+  padding: 0 20px;
 }
 
 .game-card {
-    background: #1f1f1f;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.25s ease;
-    text-align: center;
+  background: #1f1f1f;
+  border-radius: 0;           /* sharp corners as you requested */
+  overflow: hidden;
+  text-align: center;
+  transition: background 0.25s ease;
 }
 
 .game-card:hover {
-    background: #2a2a2a;
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.25);
+  background: #2a2a2a;        /* only lightens, no pop-up */
 }
 
 .game-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.game-card a {
-    text-decoration: none;
-    color: inherit;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .game-card h3 {
-    margin: 12px 10px 6px 10px;
-    font-size: 1.15em;
-    color: #ffcc00;
+  margin: 10px 8px 6px 8px;
+  font-size: 1.02em;
+  color: #ffcc00;
 }
 
-.game-card .game-desc {
-    margin: 0 10px 16px 10px;
-    font-size: 0.93em;
-    color: #ccc;
-    line-height: 1.45;
-    min-height: 48px;
+.game-desc {
+  margin: 0 8px 12px 8px;
+  font-size: 0.9em;
+  color: #ccc;
+  line-height: 1.45;
+}
+
+/* ==================== RELATED GAMES SECTION ==================== */
+.related-section {
+  margin: 60px auto 40px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.related-section h2 {
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 18px;
+}
+
+.related-card {
+  background: #1f1f1f;
+  border-radius: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.related-card:hover {
+  background: #2a2a2a;
+}
+
+.related-card img {
+  width: 100%;
+  height: auto;
+}
+
+.related-card h3 {
+  margin: 10px 6px 8px 6px;
+  font-size: 0.98em;
+  color: #ffcc00;
 }
 
 /* Simple navigation */
